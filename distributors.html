@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/logo.png">
+
+    <title>Safewash | Distributors</title>
+
+    <script src="js/safewash.js"></script>
+
+    <link rel="stylesheet" href="./css/safewash.css">
+</head>
+<body>
+    <div class="top_containr" id="home">
+        <img src="./media/mobile/top%20bg%20ellipse1.png" alt="" id="elips1">
+        <img src="./media/mobile/top%20bg%20ellipse2.png" alt="" id="elips2">
+        <img src="./media/mobile/top%20bg%20rectangle1.png" alt="" id="rect1">
+        <img src="./media/mobile/top%20bg%20rectangle2.png" alt="" id="rect2">
+        <img src="./media/mobile/top%20bg%20rectangle3.png" alt="" id="rect3">
+        <img src="./media/mobile/dist_top.png" alt="" id="bldn">
+    </div>
+    <div class="home_containr">
+    <a href="#home" class="logo1"><img src="./media/logo.png" alt=""></a>
+    <br>
+    <button id="menu_btn"><img src="./media/mobile/menu_cl.png" alt="" onclick="show_()">
+    </button>
+</div>
+    <!--the menu modal-->
+    <div class="modal" id="menu" role="dialog">
+        <button class="close" onclick="close_();"><b>&times</b></button>
+        <div class="menu_items">
+            <div><a href="index.html#home" onclick="close()">Home</a></div>
+            <div><a href="index.html#about_us" onclick="close_()">About Us</a></div>
+            <div><a href="#" onclick="close_()">Become a Distributor</a></div>
+            <div><a href="index.html#contact" onclick="close_()">Contact us</a></div>
+        </div>
+    </div>
+    <div><a href="#home" id="scroll_up">&uparrow;</a></div>
+    <div>
+        <form id="sort_form">
+            <label><span>Find Distributors Around You</span>
+            </label>
+            <select name="" id="sort_dists" placeholder="soort">
+                <option value="" class="placehold">Sort</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">2</option>
+            </select>
+        </form>
+        <form>
+            <select id="selct_state">
+                <option value="null">Select State</option>
+            </select>
+        </form>
+        <form>
+            <select id="selct_town">
+                <option value="null">Select Town</option>
+            </select>
+        </form>
+        <button id="fnd_dist_butn1">Find Distributors</button>
+    </div>
+    <div class="srch_rslt">
+        <p><i>Search Results <span>&downarrow;</span></i>
+        </p>
+        <div class="distributor">
+            <img src="./media/mobile/kudirat.png" alt="passport photo of kudirat bakare" class="centrd">
+            <div class="dist_contnr">
+                <h3 class="dist_name">Kudirat Bakare</h3>
+                <p class="dist_addy">Surulere, Lagos State.</p>
+                <p class="dist_phone">09030267295</p>
+                <button class="contact_dist">Contact</button>
+            </div>
+        </div>
+        <div class="distributor">
+            <img src="./media/mobile/ibikunle.png" alt="passport photo of ibikunle ventures" class="centrd">
+            <div class="dist_contnr">
+                <h3 class="dist_name">Ibikunle Ventures</h3>
+                <p class="dist_addy">Surulere, Lagos State.</p>
+                <p class="dist_phone">09030267295</p>
+                <button class="contact_dist">Contact</button>
+            </div>
+        </div>
+        <div class="distributor">
+            <img src="./media/mobile/bashir.png" alt="passport photo of mallam bashir" class="centrd">
+            <div class="dist_contnr">
+                <h3 class="dist_name">Mallam Bashir Limited</h3>
+                <p class="dist_addy">Surulere, Lagos State.</p>
+                <p class="dist_phone">09030267295</p>
+                <button class="contact_dist">Contact</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cust_servc">
+            <h4>Customer Service</h4>
+            <p>Become a Distributor</p>
+            <p>Ordering and Payment</p>
+            <p>Returns</p>
+            <p>FAQs</p>
+            <p>Go to Top</p>
+        </div>
+        <div class="info">
+            <h4>Information</h4>
+            <p>About Safewash</p>
+            <p>Work with Us</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+        </div>
+        <div class="contact_sw" id="contact">
+            <h4>Contact Us</h4>
+            <p>+23456778889996</p>
+            <p>safewash@gmail.com</p>
+            <div class="sm_logos">
+                <img src="./media/mobile/ig%20vector.png" alt="">
+                <img src="./media/mobile/twt%20vector.png" alt="">
+                <img src="./media/mobile/fb%20vector.png" alt="">
+                <img src="./media/mobile/li%20vector.png" alt="">
+            </div>
+        </div>
+        <div class="parent_coy">
+            <img src="./media/mobile/BQ%20Dark%20Big%206.png" alt="">
+        </div>
+    </div>
+    <div class="copywright">
+        <p>&copy bqsafewash 2021</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/logo.png">
+
+    <title>Safewash | Kiddies wash got better</title>
+
+    <script src="js/safewash.js"></script>
+
+    <link rel="stylesheet" href="./css/safewash.css">
+
+</head>
+<body onload="show_slides(1)//auto_slides">
+<div class="top_containr" id="home">
+    <img src="./media/mobile/top%20bg%20ellipse1.png" alt="" id="elips1">
+    <img src="./media/mobile/top%20bg%20ellipse2.png" alt="" id="elips2">
+    <img src="./media/mobile/top%20bg%20rectangle1.png" alt="" id="rect1">
+    <img src="./media/mobile/top%20bg%20rectangle2.png" alt="" id="rect2">
+    <img src="./media/mobile/top%20bg%20rectangle3.png" alt="" id="rect3">
+</div>
+<div class="home_containr">
+    <a href="#home" class="logo1"><img src="./media/logo.png" alt=""></a>
+    <br>
+    <button id="menu_btn"><img src="./media/mobile/menu_cl.png" alt="" onclick="show_()">
+    </button>
+</div>
+<!--the menu modal-->
+<div class="modal" id="menu" role="dialog">
+    <button class="close" onclick="close_();"><b>&times</b></button>
+    <div class="menu_items">
+        <div><a href="#home" onclick="close_()">Home</a></div>
+        <div><a href="#about_us" onclick="close_()">About Us</a></div>
+        <div><a href="distributors.html" onclick="close_()">Become a Distributor</a></div>
+        <div><a href="#contact" onclick="close_()">Contact us</a></div>
+    </div>
+</div>
+<div><a href="#home" id="scroll_up">&uparrow;</a></div>
+<div class="slides_containr" >
+    <div class="slides fade" id="slide1"><br>
+        <div class="slides_text1" id="slide1_txt1">A Liquid Laundry Detergent Specifically Formulated for</div>
+        <div class="slides_text2" id="slide1_txt2">Babies and Children Clothings</div>
+        <button id="slide1_btn1">Find Distributors Around You?</button>
+        <img src="./media/desktop/desk_slide1.png" alt="" id="slide1_img1">
+    </div>
+    <div class="slides fade" id="slide2"><br>
+        <div class="slides_text1" id="slide2_txt1">Remove 99% Tough Stains</div>
+        <div class="slides_txt2" id="slide2_txt2">Preserves Clothings Colour</div>
+        <button id="slide2_btn1">Become A Distributor</button>
+        <img src="./media/mobile/Woman and BQ safewash 1.png" id="slide2_img1">
+    </div>
+    <div class="slides fade" id="slide3"><br>
+        <div class="slides_text1" id="slide3_txt1">Keep your Baby Smiling All Day</div>
+        <div class="slides_text2" id="slide3_txt2">Zero Skin Irritation</div>
+        <button id="slide3_btn1">Find Distributors Around You?</button>
+        <img src="./media/mobile/BQ%20Safewash%20baby%20only%20%20no%20background%203.png" id="slide3_img1">
+        <img src="./media/mobile/Vector bg 3.png" alt="" id="slide3_img2">
+    </div>
+    <div class="slides fade" id="slide4"><br>
+        <div class="slides_text1" id="slide4_txt1">Mild and Gentle on Your Baby's Soft Skin</div>
+        <div class="slides_text2" id="slide4_txt2">Happy Fragrance</div>
+        <button id="slide4_btn1">Become A Distributor</button>
+        <img src="./media/mobile/bg%204.png" alt="" id="slide4_img1">
+    </div>
+    <!-- Next and previous buttons just in case--
+    <a class="prev" onclick="plus_slides(-1)">&#10094;</a>
+    <a class="next" onclick="plus_slides(1)">&#10095;</a> -->
+</div>
+
+<!-- The dots/circles -->
+<div class="dots_containr" style="text-align:left">
+    <span class="dot" onclick="current_slide(1)"></span>
+    <span class="dot" onclick="current_slide(2)"></span>
+    <span class="dot" onclick="current_slide(3)"></span>
+    <span class="dot" onclick="current_slide(4)"></span>
+</div>
+<div class="baby_in_basket">
+    <img src="./media/mobile/baby%20in%20the%20basket.png" alt="picture of a baby in a basket">
+</div>
+<div class="notabl_feat">
+    <h2>Notable Features</h2>
+    <p>We are moved to create a premium, harmful chemical free, sparkling clean liquid laundry soap clinically safe for babies and children’s health.</p>
+    <div class="feat protection">
+        <img src="./media/mobile/shield.png" alt="">
+        <h4>Protection</h4>
+        <p>We are moved to create a premium, harmful chemical free, sparkling clean liquid laundry soap .</p>
+    </div>
+    <div class="feat eco-friendly">
+        <img src="./media/mobile/biodegradable%201.png" alt="">
+        <h4 style="color: var(--sw_green)">Eco-friendly</h4>
+        <p>We are moved to create a premium, harmful chemical free, sparkling clean liquid laundry soap .</p>
+    </div>
+    <div class="feat unique">
+        <img src="./media/mobile/special%201.png" alt="">
+        <h4>Unique</h4>
+        <p>We are moved to create a premium, harmful chemical free, sparkling clean liquid laundry soap .</p>
+    </div>
+    <div class="feat high-conc">
+        <img src="./media/mobile/bubbles%201.png" alt="">
+        <h4 style="color: var(--sw_lightmaroon)">High Concentration</h4>
+        <p>We are moved to create a premium, harmful chemical free, sparkling clean liquid laundry soap .</p>
+    </div>
+</div>
+<div class="about_us" id="about_us">
+    <img src="./media/mobile/lady%20with%20bag.png" alt="lady with a bag held in elbow">
+    <h2>About Us</h2>
+    <p>We use our knowledge and expertise to provide the most efficient, effective and environmentally friendly cleaning possible. Having in mind the daily increase in percentage of children cancer patients world wide, skin reactions caused by harmful chemicals, high priced soaps leading to parents using products not ideal for children.
+    </p>
+    <button>Become A Distributor</button>
+</div>
+<div class="distribution">
+    <h2>See Our Top Distributors</h2>
+    <p>
+        We are moved to create a premium, harmful chemical free, sparkling clean liquid laundry soap clinically safe for babies and children’s health.
+    </p>
+    <div class="distributor" id="dstrbtr_1">
+        <img src="./media/mobile/kudirat.png" alt="passport photo of kudirat bakare" class="centrd">
+        <div class="dist_contnr">
+            <h3 class="dist_name">Kudirat Bakare</h3>
+            <p class="dist_addy">Surulere, Lagos State.</p>
+            <p class="dist_phone">09030267295</p>
+            <button class="contact_dist">Contact</button>
+        </div>
+    </div>
+    <div class="distributor" id="dstrbtr_2">
+        <img src="./media/mobile/ibikunle.png" alt="passport photo of ibikunle ventures" class="centrd">
+        <div class="dist_contnr">
+            <h3 class="dist_name">Ibikunle Ventures</h3>
+            <p class="dist_addy">Surulere, Lagos State.</p>
+            <p class="dist_phone">09030267295</p>
+            <button class="contact_dist">Contact</button>
+        </div>
+    </div>
+    <div class="distributor" id="dstrbtr_3">
+        <img src="./media/mobile/bashir.png" alt="passport photo of mallam bashir" class="centrd">
+        <div class="dist_contnr">
+            <h3 class="dist_name">Mallam Bashir Limited</h3>
+            <p class="dist_addy">Surulere, Lagos State.</p>
+            <p class="dist_phone">09030267295</p>
+            <button class="contact_dist">Contact</button>
+        </div>
+    </div>
+</div>
+<div class="dist_reach_out">
+    <p>We use our knowledge and expertise to provide the most efficient, effective and environmentally friendly cleaning possible.
+    </p>
+    <button>Find Distributors Around You?</button>
+</div>
+<div class="reach_out">
+    <img src="./media/mobile/reach%20out%20image.png" alt="smiling lady" class="centrd">
+    <h2>Reach Out To Us</h2>
+    <p>We use our knowledge and expertise to provide the most efficient, effective and environmentally friendly cleaning possible. Having in mind the daily increase in percentage of children cancer patients world wide, skin reactions caused by harmful chemicals, high priced soaps leading to parents using products not ideal for children.
+    </p>
+    <button>Contact Us Now!</button>
+</div>
+<div class="testimonies">
+    <h1>Read Our Testimonies</h1>
+    <p>
+        We are moved to create a premium, harmful chemical free, sparkling clean liquid laundry soap clinically safe for babies and children’s health.
+    </p>
+    <div class="testimony_contnr" id="testfier_1">
+        <img src="./media/mobile/testifier1.png" alt="picture of kudirat">
+        <div class="testimony">
+            <h4 class="testifier">Abdul Wasiu Modu</h4>
+            <p class="occupatn">Laundry Owner</p>
+            <div class="statmnt">
+                <img src="./media/mobile/text-quote%20icon.png" alt=" icon of an opening double quote">
+                <p>I have tried it oooo, the thickness and smell is everything.</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimony_contnr" id="testfier_2">
+        <img src="./media/mobile/testifier%202.png" alt="picture of wasiu">
+        <div class="testimony">
+            <h4 class="testifier">Abdul Wasiu Modu</h4>
+            <p class="occupatn">A Nursing Mother</p>
+            <div class="statmnt">
+                <img src="./media/mobile/text-quote%20icon.png" alt=" icon of an opening double quote">
+                <p>Yeah I have bought after I gave birth because I feel my baby’s clothes deserve bqsafewash I and to protect his skin from rashes and allergies</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimony_contnr" id="testfier_3">
+        <img src="./media/mobile/testifier%203.png" alt="picture of wasiu">
+        <div class="testimony">
+            <h4 class="testifier">Abdul Wasiu Modu</h4>
+            <p class="occupatn">Laundry Owner</p>
+            <div class="statmnt">
+                <img src="./media/mobile/text-quote%20icon.png" alt=" icon of an opening double quote">
+                <p>I tried bqsafewash yesterday! It was the Bomb! My customers are happy and coming back for more</p>
+            </div>
+        </div>
+    </div>
+    <div class="video_testimony centrd">
+        <video src="./media/mobile/Baby%20shark.mp4" typeof="video/mp4" width="320" height="240" controls>
+        </video>
+    </div>
+</div>
+<div class="footer">
+    <div class="cust_servc">
+        <h4>Customer Service</h4>
+        <p>Become a Distributor</p>
+        <p>Ordering and Payment</p>
+        <p>Returns</p>
+        <p>FAQs</p>
+        <p>Go to Top</p>
+    </div>
+    <div class="info">
+        <h4>Information</h4>
+        <p>About Safewash</p>
+        <p>Work with Us</p>
+        <p>Privacy Policy</p>
+        <p>Terms and Conditions</p>
+    </div>
+    <div class="contact_sw" id="contact">
+        <h4>Contact Us</h4>
+        <p>+23456778889996</p>
+        <p>safewash@gmail.com</p>
+        <div class="sm_logos">
+            <img src="./media/mobile/ig%20vector.png" alt="">
+            <img src="./media/mobile/twt%20vector.png" alt="">
+            <img src="./media/mobile/fb%20vector.png" alt="">
+            <img src="./media/mobile/li%20vector.png" alt="">
+        </div>
+    </div>
+    <div class="parent_coy">
+        <img src="./media/mobile/BQ%20Dark%20Big%206.png" alt="">
+    </div>
+</div>
+<div class="copywright">
+    <p>&copy bqsafewash 2021</p>
+</div>
+</body>
