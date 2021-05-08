@@ -40,23 +40,29 @@
     <div><a href="#home" id="scroll_up">&uparrow;</a></div>
     <div>
         <form id="sort_form">
-            <label><span>Find Distributors Around You</span>
+            <label for="sort_dists"><span>Find Distributors Around You</span>
             </label>
-            <select name="" id="sort_dists" placeholder="soort">
-                <option value="" class="placehold">Sort</option>
+            <select name="sort" id="sort_dists">
+                <option  class="placehold">Sort</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
-                <option value="2">2</option>
+                <option value="3">2</option>
             </select>
         </form>
         <form>
+            <label for="selct_state"></label>
             <select id="selct_state">
-                <option value="null">Select State</option>
+                <option value="1">Select State</option>
+                <option value="2">State 1</option>
+                <option value="3">State 2</option>
             </select>
         </form>
         <form>
+            <label for="selct_town"></label>
             <select id="selct_town">
-                <option value="null">Select Town</option>
+                <option value="1">Select Town</option>
+                <option value="2">Town 1</option>
+                <option value="3">Town 2</option>
             </select>
         </form>
         <button id="fnd_dist_butn1">Find Distributors</button>
