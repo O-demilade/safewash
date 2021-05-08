@@ -448,7 +448,7 @@ body{
         z-index: 1;
         left: 0;
         top: 0;
-        width: 100%;
+        width: 375px;
         background-color: #FFD2E7;
     }
     .menu_items>*{
